@@ -1,0 +1,30 @@
+html{
+    margin-top:0px;
+    }
+body{
+    background-color: white;
+     margin-top:0px;
+}
+.main{
+
+    text-align: justify;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.foot{
+  margin-top:15px;
+
+}
+
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+    float: left;
+    width: 50%;
+}
+
+.w3-theme-d3 {
+    color: #fff !important;
+    background-color: #c5170a !important;
+}
