@@ -1,17 +1,214 @@
 {% extends "base.html" %}
 
 {% block main %}
+
 <div class="main">
-    <div>
-        <h2 class="w3-center">Screenshots of System</h2>
-
-        <div class="w3-content w3-section" style="max-width:500px">
-          <img class="mySlides" src="{{url_for('static',filename='images/RecommenderSystem2.jpg')}}" style="width:100%">
-          <img class="mySlides" src="{{url_for('static',filename='images/RecommenderSystem1.jpg')}}" style="width:100%">
-
+  <div id='takestep'><p>Take the <br><b >FIRST STEP</b><br> the <br><b >RIGHT STEP</b> <br>today</p></div>  <img src="{{url_for('static',filename='images/grads.png')}}" id='homebanner'/>
+  <div style="float:left;" class="myheading">
+            <h1 style="font-size:450%">Welcome</h1>
         </div>
-
-    </div>
+        
+        <div id='customerpanel' style=' padding-bottom: 6em; background-color:#fff'>
+  <div >
+    <p style='font-size: 300%;line-height: 1em'><b>Undergraduates</b></p>
+    <p style='font-size: 2em; margin-bottom: 1em'>The UWI Course Recommender System assist students of all kinds. Which one are you?</p>
+  </div>
+  <div style="margin-left: 10%" class="row">
+    <div class="col-sm-4">
+      <div style='width:80%' class="panel panel-default text-center">
+        <div id='customerheads'class="panel-heading">
+          <img src="{{url_for('static',filename='images/girl.png')}}" style='margin-top:1em' class="img-circle" width='150' height='150' id='girl1'/>
+          <br><br>
+          <p>I'm <b>Jean</b></p>
+        </div>
+        <div class="panel-body" id='profiledesc'>
+          <p><strong>Faculty</strong> Science & Technology</p>
+          <p><strong>Major </strong> Computer Science</p>
+          <p><strong>Minor </strong> Psychology</p>
+          <p><i>"I need to keep track of my major and minor courses"</i></p>
+         
+        </div>
+        <div class="panel-footer">
+          
+         <a target="_blank" href="/static/images/boy.png"> <button class="btn btn-lg">Learn how <span class="glyphicon glyphicon-play-circle"></span></button> </a>
+          
+        </div>
+      </div> 
+    </div> 
+    <div class="col-sm-4">
+      <div style='width:80%' class="panel panel-default text-center">
+        <div id='customerheads' class="panel-heading">
+          <img src="{{url_for('static',filename='images/boy.png')}}" style='margin-top:1em' class="img-circle" width='150' height='150' id='boy'/>
+          <br><br>
+          <p>I'm <b>Shawn</b></p>
+        </div>
+        <div class="panel-body" id='profiledesc'>
+          <p><strong>Faculty</strong> Social Sciences </p>
+          <p><strong>Major </strong> Psychology</p>
+          <p><i>"I want to ensure I am doing the correct courses to graduate"</i></p>
+         
+        </div>
+        <div class="panel-footer">
+           
+         <a target="_blank" href="/static/images/boy.png"> <button class="btn btn-lg">Learn how <span class="glyphicon glyphicon-play-circle"></span></button> </a>
+          
+        </div>
+      </div> 
+    </div> 
+   <div class="col-sm-4">
+      <div style='width:80%' class="panel panel-default text-center">
+        <div id='customerheads' class="panel-heading">
+          <img src="{{url_for('static',filename='images/girl2.png')}}" style='margin-top:1em' class="img-circle" id='girl2'  width='150' height='150'/>
+          <br><br>
+          <p>I'm <b>Katie</b></p>
+        </div>
+        <div class="panel-body" id='profiledesc'>
+         <p><strong>Faculty</strong> Science & Technology </p>
+          <p><strong>Major </strong> Software Engineering</p>
+          <p><i>"I want to find free electives that I have the prerequisites for"</i></p>
+         
+        </div>
+        <div class="panel-footer">
+           
+         <a target="_blank" href="/static/images/boy.png"> <button class="btn btn-lg">Learn how <span class="glyphicon glyphicon-play-circle"></span></button> </a>
+          
+        </div>
+      </div> 
+    </div> 
+  </div>
 </div>
 
+        <div id="how">
+       
+        <div style=""> <div id='how_does'><p style='font-size: 450%'><b> How does it work? </b></p></div> <div >  <img style='filter: grayscale(80%); opacity: 0.5;margin-left:0%' src="{{url_for('static',filename='images/C1263-OCB-Banner-Updates_SCCI_DESIGN.jpg')}}" id='howimg'/>
+        </div></div>
+        
+        <br><br>
+        <H2 style='padding-top: 5px'><b> The UWI Course Recommender System recommend courses based on:</b> </H2>
+   
+        
+       <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/minor2.jpg"/></div>
+          <div class="feature_title"> Major/Minor</div>
+          <div class="feature_desc"><p>Recommends courses based on the student's major/minor from the database, where related courses have not yet been completed, and prerequisites have been satisfied.</p></div>
+        </div>
+        <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/found1.jpg"/></div>
+          <div class="feature_title"> Foundation</div>
+          <div class="feature_desc"><p>The system will obtain the student's faculty, and displays the appropriate courses accordingly. </p></div>
+        </div>
+       <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/interest1.jpg"/></div>
+          <div class="feature_title"> Interest</div>
+          <div class="feature_desc"><p>This tool allows student to find the best free electives bases on their selected interest and the prerequisites they have completed.</p></div>
+        </div>
+        <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/thumb.png"/></div>
+          <div class="feature_title"> Ratings</div>
+          <div class="feature_desc"><p>Ratings recommendation tool using sentient analysis to find the courses that other students have completed and rated using collaborative filtering</p></div>
+        </div>
+        <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/search2.jpg"/></div>
+          <div class="feature_title"> Search</div>
+          <div class="feature_desc"><p>Students are able to search for one or more courses by specifying the coursecode.</p></div>
+        </div>
+        <div class='features col-sm-3 '>
+          <div class="feature_icon"> <img src="/static/images/grades1.jpg"/></div>
+          <div class="feature_title"> Grades</div>
+          <div class="feature_desc"><p>Grades is an in-built function that predictes the probability of getting a certain grade on selective courses based on academic research results</p></div>
+        </div>
+        
+        <br>
+        </div>
+  <div id="screen">
+         <br>
+        <h2 class="w3-center">Screenshots of System</h2>
+
+        <div class="w3-content w3-section" style='width:100%; height:80vh'>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+            <li data-target="#myCarousel" data-slide-to="9"></li>
+            <li data-target="#myCarousel" data-slide-to="10"></li>
+            <li data-target="#myCarousel" data-slide-to="11"></li>
+            <li data-target="#myCarousel" data-slide-to="12"></li>
+            <li data-target="#myCarousel" data-slide-to="13"></li>
+            <li data-target="#myCarousel" data-slide-to="14"></li>
+            <li data-target="#myCarousel" data-slide-to="15"></li>
+          </ol>
+          
+           <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+        <div class="item active">
+          <img  src="{{url_for('static',filename='images/initial.jpg')}}" style="width:100%">
+          </div>
+         <div class="item"> 
+          <img  src="{{url_for('static',filename='images/login.png')}}" style="width:100%">
+            </div>
+            <div class="item"> 
+          <img  src="{{url_for('static',filename='images/prof1.png')}}" style="width:100%">
+            </div>
+            <div class="item"> 
+          <img  src="{{url_for('static',filename='images/prof2.png')}}" style="width:100%">
+            </div>
+            <div class="item"> 
+          <img  src="{{url_for('static',filename='images/prof3.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/maj.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/min1.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/min2.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/found.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/success.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/interest.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/rate.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/search1.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/help.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/prog1.png')}}" style="width:100%">
+            </div>
+             <div class="item"> 
+          <img  src="{{url_for('static',filename='images/prog2.png')}}" style="width:100%">
+            </div>
+             </div>
+             <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </div>
+    </div>
+    <div></div>
+</div>  
 {% endblock %}

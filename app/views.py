@@ -31,7 +31,6 @@ def flash_errors(form):
                 error
             ), 'danger')
             
-@app.route('/api/logout')
 
     
 @app.route('/<file_name>.txt')
