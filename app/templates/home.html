@@ -79,7 +79,14 @@
     </div> 
   </div>
 </div>
-
+ <div id="walkthroughVideo">
+        <p align='right' style='font-size: 5em; margin-right: 3%'><b>Walkthrough</b></p>
+        <div align='center' class="dm_video_container">
+          <video  width="560" height="315" style='width:100%; height:80vh' controls>
+    <source src="{{url_for('static',filename='videos/CourseRecommenderSystemDemo.mp4')}}" type="video/mp4">
+</video>
+<!--<iframe width="560" height="315" style='width:100%; height:80vh' src="{{url_for('static',filename='videos/CourseRecommenderSystemDemo.mp4')}}" frameborder="0" allowfullscreen></iframe>-->
+        </div></div>
         <div id="how">
        
         <div style=""> <div id='how_does'><p style='font-size: 450%'><b> How does it work? </b></p></div> <div >  <img style='filter: grayscale(80%); opacity: 0.5;margin-left:0%' src="{{url_for('static',filename='images/C1263-OCB-Banner-Updates_SCCI_DESIGN.jpg')}}" id='howimg'/>
@@ -123,14 +130,7 @@
         <br>
         </div>
         
-        <div id="walkthroughVideo">
-        <p align='right' style='font-size: 5em; margin-right: 3%'><b>Walkthrough</b></p>
-        <div align='center' class="dm_video_container">
-          <video  width="560" height="315" style='width:100%; height:80vh' controls>
-    <source src="{{url_for('static',filename='videos/CourseRecommenderSystemDemo.mp4')}}" type="video/mp4">
-</video>
-<!--<iframe width="560" height="315" style='width:100%; height:80vh' src="{{url_for('static',filename='videos/CourseRecommenderSystemDemo.mp4')}}" frameborder="0" allowfullscreen></iframe>-->
-        </div></div>
+       
   <div id="screen">
          <br>
         <h2 class="w3-center">Screenshots of System</h2>
