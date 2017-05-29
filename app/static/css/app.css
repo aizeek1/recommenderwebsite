@@ -287,3 +287,10 @@ a:active{
 .tablink{
     text-align:center;
 }
+
+#walkthroughVideo{
+  height: 130vh;
+  background-color: #373737;
+  color: white;
+  padding-top: 4em;
+}
