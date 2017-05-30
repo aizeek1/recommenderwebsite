@@ -2,15 +2,16 @@
 
 {% block main %}
 
-<div class="main">
+<div>
   <div id='takestep'><p>Take the <br><b >FIRST STEP</b><br> the <br><b >RIGHT STEP</b> <br>today</p></div>  <img src="{{url_for('static',filename='images/grads.png')}}" id='homebanner'/>
   <div style="float:left;" class="myheading">
             <h1 style="font-size:450%">Welcome</h1>
         </div>
-        <div style='font-size: 1.5em; margin-bottom: 2em; margin-top: 10em' >The UWI Course Recommender System  is a web-based application, that makes recommendations based on a student's major(s), minor(s), interests, feedback from past students and faculty in regards to foundation courses.</div>
+        <div class="mainidea">
+        <div style='font-size: 1.5em; margin-top: 10em; padding: 3em;  background-color:#fff'>The UWI Course Recommender System  is a web-based application, that makes recommendations based on a student's major(s), minor(s), interests, feedback from past students and faculty in regards to foundation courses.</div>
        
        
-        <div id='customerpanel' style=' padding-bottom: 6em; background-color:#fff'>
+        <div id='customerpanel' style=' padding: 3em; margin-bottom:3em; background-color:#fff'>
   <div >
     <p style='font-size: 300%;line-height: 1em'><b>Undergraduates</b></p>
     <p style='font-size: 1.5em; margin-bottom: 1em'>The UWI Course Recommender System assist students of all kinds. Which one are you?</p>
@@ -79,6 +80,7 @@
     </div> 
   </div>
 </div>
+</div>
  <div id="walkthroughVideo">
         <p align='right' style='font-size: 5em; margin-right: 3%'><b>Walkthrough</b></p>
         <div align='center' class="dm_video_container">
@@ -87,6 +89,7 @@
 </video>
 <!--<iframe width="560" height="315" style='width:100%; height:80vh' src="{{url_for('static',filename='videos/CourseRecommenderSystemDemo.mp4')}}" frameborder="0" allowfullscreen></iframe>-->
         </div></div>
+       
         <div id="how">
        
         <div style=""> <div id='how_does'><p style='font-size: 450%'><b> How does it work? </b></p></div> <div >  <img style='filter: grayscale(80%); opacity: 0.5;margin-left:0%' src="{{url_for('static',filename='images/C1263-OCB-Banner-Updates_SCCI_DESIGN.jpg')}}" id='howimg'/>
@@ -129,7 +132,7 @@
         
         <br>
         </div>
-        
+  
 
 </div>  
 {% endblock %}

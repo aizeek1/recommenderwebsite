@@ -2,7 +2,7 @@ html{
     margin-top:0px;
     }
 body{
-    background-color: white;
+    background-color: #fafafa;
      margin-top:0px;
  
     
@@ -81,7 +81,7 @@ a:active{
 
 #takestep{
   position: absolute;
-  background-color: #d9534f;
+  background-color: #c5170a;
   width: 25%;
   height: 40vh;
   text-align: center;
@@ -294,4 +294,8 @@ a:active{
   color: white;
   padding-top: 4em;
   margin-bottom: 5em;
+}
+
+.mainidea{
+     box-shadow: 15px 0px 50px rgba(0,0,0, .1);
 }
